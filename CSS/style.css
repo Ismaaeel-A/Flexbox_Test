@@ -10,14 +10,14 @@ header {
     border-bottom: 3px double;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(30, 28, 26);
+    color: rgb(241, 255, 183);
 }
 
 #images {
     display: flex;
     justify-content: space-evenly;
-    background-image: url(https://ismaaeel-a.github.io/allimages/Images/images-background.png);
-    background-repeat: no-repeat;
-    background-position: center;
+
     padding-block: 20px;
 
 
@@ -26,11 +26,37 @@ header {
         height: 70%;
 
         border-radius: 10%;
-        box-shadow: 0 0 10px rgb(93, 127, 117);
-        transition: transform 0.4s;
+        opacity: 0.5;
+
+        transition: transform 0.4s, box-shadow 0.5s, opacity 0.3s;
 
         &:hover {
             transform: scale(1.2);
+            box-shadow: 0 0 20px rgb(93, 127, 117);
+            opacity: 1;
         }
     }
 }
+
+body{
+    background-image: url(https://ismaaeel-a.github.io/allimages/Images/images-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+/* 
+#Bleach {
+    background-color: aqua;
+}
+
+#Bleach>div {
+display: block;
+background-color: brown;
+    &>img {
+        width: 100px;
+    }
+}
+
+figure>img{width: 100px;} */
