@@ -1,0 +1,36 @@
+*,
+*::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 3px double;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#images {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(https://ismaaeel-a.github.io/allimages/Images/images-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-block: 20px;
+
+
+    & img {
+        width: 25%;
+        height: 70%;
+
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(93, 127, 117);
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
